@@ -1,0 +1,54 @@
+Start train-evaluate |nor_conv_3x3~0|+|nor_conv_3x3~0|nor_conv_1x1~1|+|avg_pool_3x3~0|nor_conv_1x1~1|nor_conv_3x3~2|
+arch_config : {'channel': 16, 'num_cells': 5}
+
+The 00/03-th seed is 777 ----------------------<.>----------------------
+Does not find the existing file results\meta_test\svhn\best_arch\seed-0777.pth, train and evaluate!
+nas_bench_201/configs/nas-benchmark/svhn.config
+Configure(scheduler='cos', eta_min=0.0, epochs=200, warmup=0, optim='SGD', LR=0.1, decay=0.0005, momentum=0.9, nesterov=True, criterion='Softmax', batch_size=256, class_num=10, xshape=(1, 3, 32, 32))
+Evaluate ||||||| svhn       ||||||| Train-Num=73257, Valid-Num=26032, Train-Loader-Num=287, Valid-Loader-Num=102, batch size=256
+Evaluate ||||||| svhn       ||||||| Config=Configure(scheduler='cos', eta_min=0.0, epochs=200, warmup=0, optim='SGD', LR=0.1, decay=0.0005, momentum=0.9, nesterov=True, criterion='Softmax', batch_size=256, class_num=10, xshape=(1, 3, 32, 32))
+Evaluate ---->>>> ori-test   with 102 batchs
+Evaluate ---->>>> x-valid    with 51 batchs
+Evaluate ---->>>> x-test     with 51 batchs
+[2021-07-19 20:56:31] Seed-------------------------- 777 --------------------------
+FLOP = 121.81569 MB, Param = 0.858426 MB
+[2021-07-19 20:59:41] Time Left: [10:31:21] epoch=000/200 :: Train [loss=1.12079, acc@1=61.47%, acc@5=87.64%] Valid [loss=0.92408, acc@1=70.56%, acc@5=96.14%]
+[2021-07-19 21:01:31] Time Left: [08:15:16] epoch=001/200 :: Train [loss=0.29979, acc@1=91.05%, acc@5=98.95%] Valid [loss=0.92857, acc@1=74.55%, acc@5=97.72%]
+[2021-07-19 21:03:21] Time Left: [07:28:36] epoch=002/200 :: Train [loss=0.24992, acc@1=92.69%, acc@5=99.16%] Valid [loss=0.47283, acc@1=85.72%, acc@5=98.45%]
+[2021-07-19 21:05:11] Time Left: [07:04:37] epoch=003/200 :: Train [loss=0.22858, acc@1=93.27%, acc@5=99.24%] Valid [loss=0.25125, acc@1=92.76%, acc@5=99.39%]
+[2021-07-19 21:07:01] Time Left: [06:49:35] epoch=004/200 :: Train [loss=0.21753, acc@1=93.70%, acc@5=99.31%] Valid [loss=0.26542, acc@1=92.35%, acc@5=99.28%]
+[2021-07-19 21:08:52] Time Left: [06:39:04] epoch=005/200 :: Train [loss=0.20883, acc@1=93.93%, acc@5=99.36%] Valid [loss=0.24944, acc@1=92.58%, acc@5=99.33%]
+[2021-07-19 21:10:42] Time Left: [06:30:59] epoch=006/200 :: Train [loss=0.20030, acc@1=94.18%, acc@5=99.40%] Valid [loss=0.25037, acc@1=92.56%, acc@5=99.42%]
+[2021-07-19 21:12:32] Time Left: [06:24:25] epoch=007/200 :: Train [loss=0.19612, acc@1=94.35%, acc@5=99.36%] Valid [loss=0.42111, acc@1=86.56%, acc@5=98.76%]
+[2021-07-19 21:14:23] Time Left: [06:19:01] epoch=008/200 :: Train [loss=0.19221, acc@1=94.41%, acc@5=99.40%] Valid [loss=0.28605, acc@1=91.91%, acc@5=99.29%]
+[2021-07-19 21:16:13] Time Left: [06:14:20] epoch=009/200 :: Train [loss=0.18984, acc@1=94.50%, acc@5=99.43%] Valid [loss=0.35892, acc@1=89.17%, acc@5=99.06%]
+[2021-07-19 21:18:04] Time Left: [06:10:09] epoch=010/200 :: Train [loss=0.18774, acc@1=94.66%, acc@5=99.44%] Valid [loss=0.60908, acc@1=80.30%, acc@5=98.25%]
+[2021-07-19 21:19:55] Time Left: [06:06:40] epoch=011/200 :: Train [loss=0.18704, acc@1=94.71%, acc@5=99.44%] Valid [loss=0.20883, acc@1=93.93%, acc@5=99.51%]
+[2021-07-19 21:21:47] Time Left: [06:03:23] epoch=012/200 :: Train [loss=0.18397, acc@1=94.76%, acc@5=99.46%] Valid [loss=0.39494, acc@1=88.04%, acc@5=98.89%]
+[2021-07-19 21:23:37] Time Left: [06:00:05] epoch=013/200 :: Train [loss=0.17684, acc@1=95.01%, acc@5=99.49%] Valid [loss=0.23288, acc@1=93.32%, acc@5=99.39%]
+[2021-07-19 21:25:29] Time Left: [05:57:08] epoch=014/200 :: Train [loss=0.17934, acc@1=95.00%, acc@5=99.49%] Valid [loss=0.21463, acc@1=93.80%, acc@5=99.52%]
+[2021-07-19 21:27:20] Time Left: [05:54:18] epoch=015/200 :: Train [loss=0.17631, acc@1=94.94%, acc@5=99.50%] Valid [loss=0.22142, acc@1=93.79%, acc@5=99.39%]
+[2021-07-19 21:29:11] Time Left: [05:51:35] epoch=016/200 :: Train [loss=0.17145, acc@1=95.04%, acc@5=99.52%] Valid [loss=0.45735, acc@1=86.68%, acc@5=98.87%]
+[2021-07-19 21:31:03] Time Left: [05:49:09] epoch=017/200 :: Train [loss=0.17759, acc@1=94.87%, acc@5=99.50%] Valid [loss=0.21790, acc@1=93.66%, acc@5=99.46%]
+[2021-07-19 21:32:54] Time Left: [05:46:30] epoch=018/200 :: Train [loss=0.16988, acc@1=95.17%, acc@5=99.53%] Valid [loss=0.52456, acc@1=84.89%, acc@5=99.07%]
+[2021-07-19 21:34:44] Time Left: [05:43:57] epoch=019/200 :: Train [loss=0.16828, acc@1=95.18%, acc@5=99.55%] Valid [loss=0.24801, acc@1=92.82%, acc@5=99.38%]
+[2021-07-19 21:36:35] Time Left: [05:41:28] epoch=020/200 :: Train [loss=0.16407, acc@1=95.36%, acc@5=99.53%] Valid [loss=0.22976, acc@1=93.42%, acc@5=99.42%]
+[2021-07-19 21:38:27] Time Left: [05:39:12] epoch=021/200 :: Train [loss=0.16347, acc@1=95.38%, acc@5=99.55%] Valid [loss=0.26329, acc@1=92.52%, acc@5=99.37%]
+[2021-07-19 21:40:18] Time Left: [05:36:52] epoch=022/200 :: Train [loss=0.16500, acc@1=95.25%, acc@5=99.52%] Valid [loss=0.32454, acc@1=90.94%, acc@5=99.25%]
+[2021-07-19 21:42:08] Time Left: [05:34:33] epoch=023/200 :: Train [loss=0.16255, acc@1=95.34%, acc@5=99.54%] Valid [loss=0.33387, acc@1=90.31%, acc@5=99.10%]
+[2021-07-19 21:43:59] Time Left: [05:32:15] epoch=024/200 :: Train [loss=0.16237, acc@1=95.38%, acc@5=99.57%] Valid [loss=0.30193, acc@1=91.11%, acc@5=99.05%]
+[2021-07-19 21:45:50] Time Left: [05:30:02] epoch=025/200 :: Train [loss=0.15942, acc@1=95.40%, acc@5=99.59%] Valid [loss=0.38472, acc@1=88.23%, acc@5=99.19%]
+[2021-07-19 21:47:42] Time Left: [05:27:54] epoch=026/200 :: Train [loss=0.16009, acc@1=95.40%, acc@5=99.59%] Valid [loss=0.23879, acc@1=93.25%, acc@5=99.24%]
+[2021-07-19 21:49:33] Time Left: [05:25:43] epoch=027/200 :: Train [loss=0.15759, acc@1=95.58%, acc@5=99.55%] Valid [loss=0.44461, acc@1=86.91%, acc@5=99.13%]
+[2021-07-19 21:51:23] Time Left: [05:23:32] epoch=028/200 :: Train [loss=0.15763, acc@1=95.55%, acc@5=99.57%] Valid [loss=0.21173, acc@1=94.10%, acc@5=99.34%]
+[2021-07-19 21:53:14] Time Left: [05:21:22] epoch=029/200 :: Train [loss=0.15315, acc@1=95.64%, acc@5=99.63%] Valid [loss=0.32136, acc@1=90.74%, acc@5=98.97%]
+[2021-07-19 21:55:05] Time Left: [05:19:14] epoch=030/200 :: Train [loss=0.15206, acc@1=95.65%, acc@5=99.62%] Valid [loss=0.28723, acc@1=91.30%, acc@5=99.18%]
+[2021-07-19 21:56:56] Time Left: [05:17:10] epoch=031/200 :: Train [loss=0.14933, acc@1=95.80%, acc@5=99.59%] Valid [loss=0.37917, acc@1=88.31%, acc@5=98.72%]
+[2021-07-19 21:58:47] Time Left: [05:15:04] epoch=032/200 :: Train [loss=0.15264, acc@1=95.72%, acc@5=99.59%] Valid [loss=0.21162, acc@1=93.91%, acc@5=99.47%]
+[2021-07-19 22:00:37] Time Left: [05:12:59] epoch=033/200 :: Train [loss=0.14803, acc@1=95.81%, acc@5=99.61%] Valid [loss=0.25746, acc@1=92.36%, acc@5=99.35%]
+[2021-07-19 22:02:39] Time Left: [05:11:45] epoch=034/200 :: Train [loss=0.15050, acc@1=95.63%, acc@5=99.62%] Valid [loss=0.25026, acc@1=92.93%, acc@5=99.42%]
+[2021-07-19 22:04:34] Time Left: [05:09:57] epoch=035/200 :: Train [loss=0.14742, acc@1=95.79%, acc@5=99.62%] Valid [loss=0.29363, acc@1=91.29%, acc@5=99.24%]
+[2021-07-19 22:06:26] Time Left: [05:07:59] epoch=036/200 :: Train [loss=0.14598, acc@1=95.89%, acc@5=99.62%] Valid [loss=0.23262, acc@1=93.31%, acc@5=99.44%]
+[2021-07-19 22:08:18] Time Left: [05:05:58] epoch=037/200 :: Train [loss=0.14764, acc@1=95.76%, acc@5=99.62%] Valid [loss=0.22946, acc@1=93.48%, acc@5=99.46%]
+[2021-07-19 22:10:09] Time Left: [05:03:57] epoch=038/200 :: Train [loss=0.14057, acc@1=96.01%, acc@5=99.62%] Valid [loss=0.25441, acc@1=92.69%, acc@5=99.33%]
+[2021-07-19 22:12:00] Time Left: [05:01:57] epoch=039/200 :: Train [loss=0.14610, acc@1=95.86%, acc@5=99.64%] Valid [loss=0.24353, acc@1=93.06%, acc@5=99.40%]

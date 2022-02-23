@@ -1,0 +1,14 @@
+Start train-evaluate |nor_conv_1x1~0|+|nor_conv_3x3~0|none~1|+|skip_connect~0|nor_conv_3x3~1|nor_conv_1x1~2|
+arch_config : {'channel': 16, 'num_cells': 5}
+
+The 00/03-th seed is 777 ----------------------<.>----------------------
+Does not find the existing file results\meta_test\mnist\best_arch\seed-0777.pth, train and evaluate!
+nas_bench_201/configs/nas-benchmark/mnist.config
+Configure(scheduler='cos', eta_min=0.0, epochs=50, warmup=0, optim='SGD', LR=0.1, decay=0.0005, momentum=0.9, nesterov=True, criterion='Softmax', batch_size=256, class_num=10, xshape=(1, 3, 32, 32))
+Evaluate ||||||| mnist      ||||||| Train-Num=60000, Valid-Num=10000, Train-Loader-Num=235, Valid-Loader-Num=40, batch size=256
+Evaluate ||||||| mnist      ||||||| Config=Configure(scheduler='cos', eta_min=0.0, epochs=50, warmup=0, optim='SGD', LR=0.1, decay=0.0005, momentum=0.9, nesterov=True, criterion='Softmax', batch_size=256, class_num=10, xshape=(1, 3, 32, 32))
+Evaluate ---->>>> ori-test   with 40 batchs
+Evaluate ---->>>> x-valid    with 20 batchs
+Evaluate ---->>>> x-test     with 20 batchs
+[2021-07-19 20:35:24] Seed-------------------------- 777 --------------------------
+FLOP = 86.42625 MB, Param = 0.615386 MB

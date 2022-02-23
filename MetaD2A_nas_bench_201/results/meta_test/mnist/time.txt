@@ -1,0 +1,2 @@
+generator elasped time 3.12s
+predictor average elasped time 6.01s
